@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./lesson1.component.css']
 })
 export class Lesson1Component implements OnInit {
- abc = "";
+ @Input() abc = 100;
 
   constructor() { }
 

@@ -6,21 +6,23 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./lesson2.component.css']
 })
 export class Lesson2Component implements OnInit {
-  show = true;
-  @Input() score = 60;
+  @Input()  abc = 100;
   @Output() countChange:EventEmitter<number> = new EventEmitter<number>();
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  xxxx(){
-    this.show = !this.show;
+  show=true;
+  Score=0;
+
+  view(){
+    this.show=!this.show;
   }
 
   change(event:any){
-    console.log('at lesson 2', event)
     this.countChange.emit(event)
+    // console.log(event)
   }
+
 }

@@ -1,0 +1,19 @@
+<p>
+    English <input type="text" [(ngModel)]="word.English"> Chinese <input type="text"  [(ngModel)]="word.Chinese"> <button (click)="save()" >save</button>
+</p>
+<p>
+    Filter <input type="text" [(ngModel)]="filter">
+<p>
+
+
+<table id="customers">
+    <tr>
+      <th>English</th>
+      <th>Chinese</th>
+    
+   
+    <tr *ngFor="let s of dic | filterByImpure: ['English']: filter">
+      <td>{{s.English}}</td>
+      <td>{{s.Chinese}}</td>
+    </tr>
+  </table>

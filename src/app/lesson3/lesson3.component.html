@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of weekday">{{item}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let item of score" [ngStyle]="{'color':item<60? 'red':'green'}">{{item}}分</li>
+</ul>

@@ -1,0 +1,18 @@
+<p>
+姓名: <input type="text" [(ngModel)]="SingleScore.name">  成績: <input type="text" [(ngModel)]="SingleScore.score"> <button *ngIf="SingleScore.score >=0 && SingleScore.score<=100"  (click)="save()">save</button> <label *ngIf="SingleScore.score <0 || SingleScore.score>100">請輸入0~100的數字</label>
+</p>
+<p>
+  filter: <input type="text" [(ngModel)]="filter">
+</p>
+
+<table id="customers">
+  <tr>
+    <th>姓名</th>
+    <th>成績</th>
+  
+ 
+  <tr *ngFor="let s of dic | filterByImpure: ['score']: filter">
+    <td>{{s.name}}</td>
+    <td>{{s.score}}</td>
+  </tr>
+</table>

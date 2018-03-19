@@ -1,5 +1,21 @@
-{{"半徑"}}
-<input type="text" [(ngModel)]="abc">
-{{"圓周長:" + abc * 2 * 3.14}}
-{{"圓面積:" + abc * abc * 3.14}}
+<p>
+<input type="text" [(ngModel)]="tw" >
+</p>
+<p>
+tw$:{{tw}}
+</p>
+<p>
+us$:{{tw*30}}
+</p>
+jp$:{{tw/5}}
+<p></p>
+
+
+半徑:<input type="text"[(ngModel)]="c">
+<p></p>
+圓周長:{{c*2*3.14}}
+<p></p>
+面積:{{c*c*3.14}}
+
+
 

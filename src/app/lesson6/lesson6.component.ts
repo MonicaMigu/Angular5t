@@ -7,28 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson6Component implements OnInit {
 
-  les6:number=0
+  les6:string;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  change(event){
-    console.log(event)
-    this.les6 = event
+  abc(event:any){
+    this.les6=event
+    // console.log(event)
   }
 
   aaa(){
-    console.log('安安owo')
+    console.log("Hello");
   }
 
   bbb(){
-
+    alert("Hello Ha");
   }
 
   ccc(){
-
+    this.les6="HI HI";
   }
-
 }

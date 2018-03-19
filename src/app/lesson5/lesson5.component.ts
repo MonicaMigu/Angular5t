@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson5Component implements OnInit {
 
+  ttt:String;
   constructor() { }
 
   ngOnInit() {

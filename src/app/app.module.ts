@@ -10,7 +10,7 @@ import { Lesson1Component } from './lesson1/lesson1.component';
 import { Lesson2Component } from './lesson2/lesson2.component';
 import { Lesson3Component } from './lesson3/lesson3.component';
 
-import {NgPipesModule} from 'ngx-pipes';
+// import {NgPipesModule} from 'ngx-pipes';
 import { Pratice1Component } from './pratice1/pratice1.component';
 import { Lesson4Component } from './lesson4/lesson4.component';
 import { Homework1Component } from './homework1/homework1.component';
@@ -20,7 +20,11 @@ import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
 import { Lesson61Component } from './lesson6-1/lesson6-1.component';
 import { Homework2Component } from './homework2/homework2.component';
-import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';  //別人的moudule
+import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Lesson7Component } from './lesson7/lesson7.component';  //別人的moudule
+import { BmiService } from './bmi.service';
 
 
 @NgModule({
@@ -38,15 +42,20 @@ import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
     HightlightDirective,
     Lesson61Component,
     Homework2Component,
-    Homework2BtnComponent
+    Homework2BtnComponent,
+    DyclassComponent,
+    Jq1Component,
+    Lesson7Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    NgPipesModule //別人寫的
+    // NgPipesModule //別人寫的
   ],
-  providers: [],
+  providers: [
+    BmiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

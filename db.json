@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Angular book",
+      "author": "MonicaMu",
+      "id": 3
+    },
+    {
+      "title": "Angular book",
+      "author": "AllenWang",
+      "id": 4
+    },
+    {
+      "title": "離散數學",
+      "author": "進雄",
+      "id": 5
+    },
+    {
+      "title": "微積分",
+      "author": "威爸",
+      "id": 6
+    },
+    {
+      "title": "英文",
+      "author": "金龍",
+      "id": 7
+    },
+    {
+      "title": "妮，可以公主病",
+      "author": "那對夫妻",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

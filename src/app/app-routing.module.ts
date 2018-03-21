@@ -10,6 +10,8 @@ import { Lesson6Component } from './lesson6/lesson6.component';
 import { DyclassComponent } from './dyclass/dyclass.component';
 import { Jq1Component } from './jq1/jq1.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
+import { CallhttpComponent } from './callhttp/callhttp.component';
+import { NgModelDrivenComponent } from './ng-model-driven/ng-model-driven.component';
 
 const routes: Routes = [
     {path:'',redirectTo:'lesson1',pathMatch:'full'},
@@ -23,6 +25,8 @@ const routes: Routes = [
     {path:'dyclass/:number1/:number2',component:DyclassComponent},
     {path:'jq1',component:Jq1Component},
     {path:'lesson7',component:Lesson7Component},
+    {path:'callhttp',component:CallhttpComponent},
+    {path:'ng-model-driven',component:NgModelDrivenComponent},
     // {path:'homework2',component:Homework2Component},
     {path:'**',component:Lesson61Component}
 ];
